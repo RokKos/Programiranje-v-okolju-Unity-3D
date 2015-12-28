@@ -1,0 +1,1 @@
+    rm Programiranje_v_okolju_Unity_3D.aux Programiranje_v_okolju_Unity_3D.log Programiranje_v_okolju_Unity_3D.out Programiranje_v_okolju_Unity_3D.pyg Programiranje_v_okolju_Unity_3D.toc

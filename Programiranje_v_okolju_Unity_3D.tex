@@ -1,0 +1,111 @@
+\documentclass[a4paper,oneside,12pt]{article} %clanek/poročilo, ki je formata A4, enostransko, s pisavo 12
+
+%poskrbi za prikak šumnikov
+\usepackage[slovene]{babel} 
+\usepackage[utf8]{inputenc}
+
+%prikaz posebnih znakov
+\usepackage[T1]{fontenc}
+\usepackage{arev} %font package
+
+%za urlje, vsi urlji so enake barve da je bolj pregledno(uporaba \url{pot} ali \href{pot}{ime})
+\usepackage[bookmarks, colorlinks=true, %
+linkcolor=black, anchorcolor=black, citecolor=black, filecolor=black,%
+menucolor=black, runcolor=black, urlcolor=black%
+]{hyperref}
+
+%za includanje slik
+\usepackage{graphicx}
+\graphicspath{ {./Slike/} }
+
+%importanje barv
+\usepackage[usenames]{color}
+
+%deiniranje barv, barve iz strani http://latexcolor.com/
+\definecolor{indiagreen}{rgb}{0.07, 0.53, 0.03}
+\definecolor{internationalorange}{rgb}{1.0, 0.31, 0.0}
+\definecolor{alizarin}{rgb}{0.82, 0.1, 0.26}
+\definecolor{bostonuniversityred}{rgb}{0.8, 0.0, 0.0}
+
+%za pisanje matematicnih formul(reqno pomeni, da gre zaporedna cifra na desno stran)
+\usepackage[reqno]{amsmath}
+
+%dodatni matematicni simboli
+\usepackage{amssymb}
+
+%doda dodatne moznosti za okolje enumerate
+\usepackage{enumerate}
+
+%doda dodatne moznosti za okolje array
+\usepackage{array}
+
+%nastavi pozicijo strani, vsi margini
+\usepackage[
+    paper=a4paper,
+    top = 2.0cm,
+    bottom = 2.9cm,
+    left = 3.0cm,
+    right = 2.5cm,
+    ]{geometry}
+
+%za importanje datotek in lažje managiranje projekta
+\usepackage{import}
+
+%za pravilno postavljanje vejic v matematicnih izrazih
+\usepackage{icomma}
+
+%za lepše prikazovanje enot
+\usepackage{units}
+
+%za barvanje code oz higliting sintax
+\usepackage{minted}
+
+\renewcommand{\familydefault}{\sfdefault} %drugace font
+
+\usepackage[makeroom]{cancel} % za crtanje texta
+\usepackage{tikz}
+\usepackage{pgfplots} %grafi
+\pgfplotsset{
+    standard/.style={
+        every axis x label/.style={at={(current axis.right of origin)},anchor=north west}, %za dajanje labelov na x osi (yticklabels = {0, $v_0$})
+        every axis y label/.style={at={(current axis.above origin)},anchor=north east} %za dajanje labelov na y osi
+    }
+}
+\usepgfplotslibrary{fillbetween} %risanje po grafu
+\usepackage{empheq} % za okvirjanje enačb
+\usepackage{gensymb} %za stopinj celzije
+
+%izdelava footerja in headerja 
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\lhead{KOS, Rok, Programiranje v okolju Unity 3D, Proj. nal., Ljubljana, Gimnazija Vič, 2016}
+\rhead{Stran \thepage \hspace{1pt} od \pageref{LastPage}}
+
+%spreminjanje naslovov in podnaslov
+\usepackage{titlesec}
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
+
+
+
+%naredi naslov, avtorja in datum
+\title{Programiranje v okolju Unity 3D}
+\author{Rok Kos} 
+\date{\today}
+
+
+\renewcommand{\abstractname}{Izvleček/Povzetek} %sprememba imena 
+
+\begin{document}
+	\maketitle
+	\newpage %nova stran
+	\begin{abstract}
+
+	\end{abstract}
+
+\end{document}
