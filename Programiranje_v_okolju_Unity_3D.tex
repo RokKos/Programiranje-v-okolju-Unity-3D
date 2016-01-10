@@ -114,26 +114,29 @@ menucolor=black, runcolor=black, urlcolor=blue%
 	\newpage %nova stran
 	%prikaze vse kategorije
 	\tableofcontents
+
+	%prikaze kazalo slik
+	\listoffigures
 	
 	\newpage
 
 	\begin{abstract}
+		V svoji projektni nalogi bom predstavil rokovanje z programskim okoljem Unity 3D. Kot primer bom vzel svojo aplikacijo, ki sem jo naredil z Unity-jem, ki predstavlja vodiča po Gimnaziji Vič.
 
+		Ključne besede: Unity3D
 	\end{abstract}
+
+	\newpage	
 
 	{\color{internationalorange}\section{SET UP}}
 	\foreach \n in {1,...,2}{
 		\subimport{1.SET_UP/}{\n.tex}
 	}
 
-
-	%prikaze kazalo slik
-	\listoffigures 
-	%prikaz virov
-	%\addcontentsline{toc}{chapter}{Viri in literatura} %dodano v kategorije
-	%\bibliographystyle{unsrt} %style prikaza
-	%\bibliography{bibliografija} %bib file, ki se includa
-
+	{\color{internationalorange}\section{SHADERS}}
+	\foreach \n in {1,...,2}{
+		\subimport{2.SHADERS/}{\n.tex}
+	}
 
 	\cite{manual} \cite{GameDevThorn} \cite{AndroidUnity}
 	%\printbibliography
