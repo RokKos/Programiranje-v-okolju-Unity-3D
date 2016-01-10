@@ -11,7 +11,7 @@
 %za urlje, vsi urlji so enake barve da je bolj pregledno(uporaba \url{pot} ali \href{pot}{ime})
 \usepackage[bookmarks, colorlinks=true, %
 linkcolor=black, anchorcolor=black, citecolor=black, filecolor=black,%
-menucolor=black, runcolor=black, urlcolor=black%
+menucolor=black, runcolor=black, urlcolor=blue%
 ]{hyperref}
 
 %za includanje slik
@@ -104,8 +104,21 @@ menucolor=black, runcolor=black, urlcolor=black%
 \begin{document}
 	\maketitle
 	\newpage %nova stran
+	%prikaze vse kategorije
+	\tableofcontents
+	
+	\newpage
+
 	\begin{abstract}
 
 	\end{abstract}
 
+	{\color{internationalorange}\section{SET UP}}
+	\foreach \n in {1,...,2}{
+		\subimport{1.SET_UP/}{\n.tex}
+	}
+
+
+	%prikaze kazalo slik
+	\listoffigures 
 \end{document}
