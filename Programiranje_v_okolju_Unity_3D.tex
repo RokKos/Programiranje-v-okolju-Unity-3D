@@ -91,7 +91,15 @@ menucolor=black, runcolor=black, urlcolor=blue%
 \titleformat*{\subsection}{\Large\bfseries}
 \titleformat*{\subsubsection}{\large\bfseries}
 
-
+%za citiranje
+\usepackage[autostyle]{csquotes}
+%za vire in literaturo
+\usepackage[
+    backend=biber, %backend za bibliografijo
+	style=alphabetic, %stil bibliografije
+	sorting=ynt %sortira po letu, avtorju in naslovu
+]{biblatex}
+\addbibresource{bibliografija.bib} %file kjer so navedeni viri in literatur
 
 %naredi naslov, avtorja in datum
 \title{Programiranje v okolju Unity 3D}
@@ -121,4 +129,16 @@ menucolor=black, runcolor=black, urlcolor=blue%
 
 	%prikaze kazalo slik
 	\listoffigures 
+	%prikaz virov
+	%\addcontentsline{toc}{chapter}{Viri in literatura} %dodano v kategorije
+	%\bibliographystyle{unsrt} %style prikaza
+	%\bibliography{bibliografija} %bib file, ki se includa
+
+
+	\cite{manual} \cite{GameDevThorn} \cite{AndroidUnity}
+	%\printbibliography
+	\printbibliography[
+		heading=bibintoc, %pove da naj bo tudi v categorijah
+		title={Viri in literatura} %naslov bibliografije
+	]
 \end{document}
