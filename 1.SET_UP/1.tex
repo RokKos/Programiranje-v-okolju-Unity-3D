@@ -18,49 +18,9 @@ Ima tudi integrirano dopolnjevanje kode(code auto-completion) in svoj debuger. S
 	\item Spremenimo \textbf{External Script Editor Args} v "\$(File)":\$(Line) zato, da bo sublime skočil v vrstico, kjer je error 
 	\item Sedaj bi nam moral Unity odpreti sublime, ko dvokliknemo na datoteko, ki je skripta
 	\item V sublimu bomo še spremenili, katere datoteke hočemo videti v projeknem drevesu. To naredimo tako, da gremo v \textbf{Project} $\rightarrow$ \textbf{Save Project As} in notri vtipkamo tole kodo:\\
-	\begin{minted}[mathescape,
-               linenos,
-               numbersep=5pt,
-               gobble=2,
-               frame=lines,
-               framesep=2mm]{json}
-		{
-			"folders":
-			[
-				{
-					"path": "Assets/Scripts",
-					"file_exclude_patterns":
-					[
-						"*.dll",
-						"*.meta"
-					]
-				}
-			]
-		}
-		
-	\end{minted}
+	\jsonsource{Izvorna_koda/SublimeProjectTree.json}
 	in potem shranimo datoteko. To nam scrije vse nepotrebne .meta in .dll datoteke
 	\item S Package Controlom na koncu še inštaliramo dodatne snippete, ki nam pomagajo pri auto-completion in barvanju kode. Vse potrebne package najdemo na tej strani \url{http://wiki.unity3d.com/index.php/Using_Sublime_Text_as_a_script_editor}, kjer so tudi bolj podrobna navodila za celoten setup Sublime Text-a.
 \end{enumerate}
 Kot zanimivost pa bi vam rad pokazal, kako enostavno se da narediti snippete v Sublime Text-u, ki se potem sprožijo ob določenem zaporedju tipk in nakoncu tabulatorja. 
-\begin{minted}[mathescape,
-           linenos,
-           numbersep=5pt,
-           gobble=2,
-           frame=lines,
-           framesep=2mm]{json}
-	{
-		"folders":
-		[
-			{
-				"path": "Assets/Scripts",
-				"file_exclude_patterns":
-				[
-					"*.dll",
-					"*.meta"
-				]
-			}
-		]
-	}
-	
-\end{minted}
+\htmlsource{Izvorna_koda/Signature.html}

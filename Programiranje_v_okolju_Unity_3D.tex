@@ -101,6 +101,16 @@ menucolor=black, runcolor=black, urlcolor=blue%
 ]{biblatex}
 \addbibresource{bibliografija.bib} %file kjer so navedeni viri in literatur
 
+%za includanje izvorne code
+\newmintedfile[htmlsource]{html}{linenos=true, mathescape, xleftmargin=0.7cm,
+               fontsize=\small,baselinestretch=0.9}
+
+\newmintedfile[csharpsource]{csharp}{linenos=true, mathescape, xleftmargin=0.7cm,
+               fontsize=\small,baselinestretch=1.0}
+
+\newmintedfile[jsonsource]{json}{linenos=true, mathescape, xleftmargin=0.7cm,
+               fontsize=\small,baselinestretch=0.9}
+
 %naredi naslov, avtorja in datum
 \title{Programiranje v okolju Unity 3D}
 \author{Rok Kos} 
@@ -139,7 +149,9 @@ menucolor=black, runcolor=black, urlcolor=blue%
 	}
 
 	{\color{internationalorange}\section{CLASSES}}
-
+	\foreach \n in {1,...,2}{
+		\subimport{3.CLASSES/}{\n.tex}
+	}
 	{\color{internationalorange}\section{PREFABS}}
 
 	{\color{internationalorange}\section{IMPORTING}}

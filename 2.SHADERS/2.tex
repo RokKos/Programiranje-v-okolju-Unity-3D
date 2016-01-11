@@ -1,25 +1,3 @@
 {\color{indiagreen}\subsection{Lastnosti shaderjev}}
 Tole je prikaz enostavnega shaderja \cite{shaders}:
-\begin{minted}[mathescape,
-               linenos,
-               numbersep=5pt,
-               gobble=2,
-               frame=lines,
-               framesep=2mm]{csharp}
-		Shader "DT\Basic\SimpleShader"{
-			SubSHader{
-				Tags = {"RenderType" = Opaque}
-				CGPROGRAM
-				#pragma surface surf Lambert
-				struct Input{
-					//(1.0, 1.0, 1.0, 1.0) R, G, B, A
-					float4 color : COLOR; 
-				};
-				void surf(Input IN, inout SurfaceOutput o){
-					o.Albedo = 1;
-				}
-				ENDCG
-			}
-			Fallback "Diffuse"
-		}
-	\end{minted}
+\csharpsource{Izvorna_koda/SimpleShader.cs}
