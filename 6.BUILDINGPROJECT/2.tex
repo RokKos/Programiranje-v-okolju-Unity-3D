@@ -1,0 +1,8 @@
+{\color{indiagreen}\subsection{Android}}
+Preden lahko zbuildamo kateri koli projekt za android moramo najprej izpolniti nekaj korakov preden lahko dejansko vidimo aplikacijo na telefonu.
+\begin{enumerate}
+	\item Prenesemo Android SDK knjižnico s tega naslova: \url{http://developer.android.com/sdk/index.html}
+	\item Namestimo knjižnico SDK in gledamo, da smo namestili saj ali več API level 4.0 tako, da bojo naše aplikacije kompatibilne z večino telefonov.
+	\item Nastavimo pot do SDK knjižnice v Unity-ju, tako da lahko Unity dostopa do nje med buildanjem aplikacije. To naredimo tako, da gremo \textbf{Edit}  $\rightarrow$ \textbf{Preferences} $\rightarrow$ \textbf{External Tools} in dobimo enako okno kot na sliki 1. Če tega ne naredimo se nam to okno pojavi, ko poskušamo prvič zbuildati aplikacijo za android.
+	\item Povežemo telefon z računalnikom. Inštaliramo potrebne driverje ter omogočimo USB Debugging(to je ključno saj drugače nebomo mogli dostopati do telefona). To omogočimo tako, da gremo v \textbf{Settings}  $\rightarrow$ \textbf{Developer options} in tam omogočimo to opcijo.
+\end{enumerate}
