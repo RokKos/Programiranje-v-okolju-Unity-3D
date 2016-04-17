@@ -60,7 +60,8 @@ menucolor=black, runcolor=black, urlcolor=blue%
 %za barvanje code oz higliting sintax
 \usepackage{minted}
 
-\renewcommand{\familydefault}{\sfdefault} %drugace font
+\usefont{T1}{cmr}{b}{n}
+%\renewcommand{\familydefault}{\sfdefault} %drugace font
 
 \usepackage[makeroom]{cancel} % za crtanje texta
 \usepackage{tikz}
@@ -103,13 +104,16 @@ menucolor=black, runcolor=black, urlcolor=blue%
 
 %za includanje izvorne code
 \newmintedfile[htmlsource]{html}{linenos=true, mathescape, xleftmargin=0.7cm,
-               fontsize=\small,baselinestretch=0.9}
+               fontsize=\small,baselinestretch=0.9, breaklines=true, breakanywhere}
 
 \newmintedfile[csharpsource]{csharp}{linenos=true, mathescape, xleftmargin=0.7cm,
-               fontsize=\small,baselinestretch=1.0}
+               fontsize=\small,baselinestretch=1.0, breaklines=true, breakanywhere}
 
 \newmintedfile[jsonsource]{json}{linenos=true, mathescape, xleftmargin=0.7cm,
-               fontsize=\small,baselinestretch=0.9}
+               fontsize=\small,baselinestretch=0.9, breaklines=true, breakanywhere}
+
+\newmintedfile[bashsource]{bash}{bgcolor=black,formatcom=\color{white}, linenos=false, mathescape, xleftmargin=0.7cm,
+               fontsize=\small,baselinestretch=0.9, breaklines=true, breakanywhere}
 
 %naredi naslov, avtorja in datum
 \title{Programiranje v okolju Unity 3D}
@@ -158,10 +162,15 @@ menucolor=black, runcolor=black, urlcolor=blue%
 	}
 
 	{\color{internationalorange}\section{IMPORTING}}
-
+	\foreach \n in {1,...,2}{
+		\subimport{5.IMPORTING/}{\n.tex}
+	}
 	{\color{internationalorange}\section{BUILDING PROJECT}}
 
-	{\color{internationalorange}\section{GIT}}
+	{\color{internationalorange}\section{VERSION CONTROL}}
+	\foreach \n in {1,...,2}{
+		\subimport{7.VERSIONCONTROL/}{\n.tex}
+	}
 
 	\cite{manual} \cite{GameDevThorn} \cite{AndroidUnity}
 	%\printbibliography

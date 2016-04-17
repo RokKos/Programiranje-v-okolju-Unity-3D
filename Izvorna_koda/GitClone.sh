@@ -1,0 +1,1 @@
+$ git clone https://RokKos@bitbucket.org/RokKos/gimvicvodic.git
