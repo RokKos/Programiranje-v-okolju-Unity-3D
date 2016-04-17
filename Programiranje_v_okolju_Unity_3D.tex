@@ -160,15 +160,23 @@ menucolor=black, runcolor=black, urlcolor=blue%
 	\newpage
 
 	\begin{abstract}
-		V svoji projektni nalogi bom predstavil rokovanje z programskim okoljem Unity 3D. Kot primer bom vzel svojo aplikacijo, ki sem jo ustvaril z Unity-jem, ki predstavlja vodiča po Gimnaziji Vič.
+		V svoji seminarski nalogi bom predstavil rokovanje z programskim okoljem Unity 3D.\\
+		V dan današnjem svetu je v hitrost razvijanja aplikacij ali prototipov zelo pospešena. Predvsem igre in pa tudi ostale aplikacije nastajajo po potrebi in imajo zelo omejen čas za izdelavo. Poskušal vam bom predstaviti zelo kompleksno razvijalsko orodje, ki je obenem tudi zelo močen game engine. Kot primer uporabe bom vzel svojo aplikacijo, ki sem jo ustvaril z Unity-jem, ki predstavlja vodiča po Gimnaziji Vič.\\
 
-		Ključne besede: Unity3D
+		Ključne besede: Unity 3D, game engine, prototip, razvoj aplikacij.
 	\end{abstract}
+	
+	\newpage
+
+	{\color{internationalorange}\section*{UVOD}}
+	Že od vedno me je zanimalo ustvarjanje in igranje iger. Preden sem spoznal Unity sem pisal v C++ in Python-u. Ampak moje igre so zgledale več ali manj bolj tekstovne igre v terminalu ali pa na 2D ploskvi. Ko sem spoznal Unity sem videl, programiranje in izdelava 3D, kaj šele 2D iger sploh ni tako zahtevna. Seveda se z Unity-jem niso rešile vse težave pri izdelavi iger temveč so se odprle nove možnosti za raziskovanje tega zelo močnega orodja. V tej seminarski nalogi vam bom probal predstaviti samo vrh ledenika pod katerim se skriva zelo veliko še neodkritega. Tudi sam še nisem popolnoma obvladal tega orodja ampak se počutim že kar domačega.\\
+	Unity uporablja zelo veliko uspešnih podjetji(npr. Outfit7) in zelo veliko iger je bilo izdanih s tem orodjem. To orodje povezuje skupaj tri veje skupaj. Te veje so risanje, 3D modeliranje in programiranje(game design). V moji seminarski nalogi bom poskušal predstaviti predvsem slednjega. 
+
 
 	\newpage	
 
-	{\color{internationalorange}\section{SET UP}}
-	\foreach \n in {1,...,2}{
+	{\color{internationalorange}\section{NAMESTITEV OKOLJA}}
+	\foreach \n in {1,...,3}{
 		\subimport{1.SET_UP/}{\n.tex}
 	}
 
@@ -177,7 +185,7 @@ menucolor=black, runcolor=black, urlcolor=blue%
 		\subimport{2.SHADERS/}{\n.tex}
 	}
 
-	{\color{internationalorange}\section{CLASSES}}
+	{\color{internationalorange}\section{KLASI}}
 	\foreach \n in {1,...,2}{
 		\subimport{3.CLASSES/}{\n.tex}
 	}
@@ -186,11 +194,11 @@ menucolor=black, runcolor=black, urlcolor=blue%
 		\subimport{4.PREFABS/}{\n.tex}
 	}
 
-	{\color{internationalorange}\section{IMPORTING}}
+	{\color{internationalorange}\section{VKLJUČEVANJE}}
 	\foreach \n in {1,...,3}{
 		\subimport{5.IMPORTING/}{\n.tex}
 	}
-	{\color{internationalorange}\section{BUILDING PROJECT}}
+	{\color{internationalorange}\section{GRAJENJE PROJEKTA}}
 	\foreach \n in {1,...,3}{
 		\subimport{6.BUILDINGPROJECT/}{\n.tex}
 	}
@@ -199,6 +207,11 @@ menucolor=black, runcolor=black, urlcolor=blue%
 		\subimport{7.VERSIONCONTROL/}{\n.tex}
 	}
 
+	{\color{internationalorange}\section{ZAKLJUČEK}}
+	Ko enkrat zgradimo projekt in dobimo apk ali exe datoteko potem se lahko najprej z njo igramo. Ampak to še ni dovolj, to aplikacijo je treba deliti tudi z ostalimi. Saj je namen aplikacij(programov) je da človeku olajšajo življenje in avtomatizirajo posamezne procese. Tako da naslednji korak bi bil uploadati aplikacijo na Google Play Store in pokazati aplikacijo ostalim in zbrati čimveč koristnih povratnih informacij. Potem pa aplikacijo glede na informacije popraviti in prilagoditi.\\
+	Po mojem mnenju ima Unity zelo uspešno prihodnost, saj ima za sabo veliko skupnost in razvijalce, ki konstantno prenavljajo to orodje in dodajajo nove funkcije. Mislim tudi, da bodo kmalu tudi večja podjetja raje kupila licence za takšna orodja in ne razvijala svojih orodji, ker se jim po eni strani ne splača po drugi strani pa se večina razvijalcev začne učiti na takih orodjih. Kar je tudi velika prednost da je brezplačno in dostopno vsem od hobi razvijalcev do velikih podjetij. 
+
+	\newpage
 	
 	%\printbibliography
 	\printbibliography[
