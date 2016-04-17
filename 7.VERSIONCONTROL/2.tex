@@ -3,8 +3,8 @@ Git je brezplačni in odprtokodni version control sistem, ki ima veliko uporabni
 Vse funkcije imajo pred ukazom besedo git.
 Funkcije:
 \begin{itemize} 
-	\item \textbf{init} : Naredi prazeno git mapo ali pa na novo reinicializira že obstoječo mapo.\\
-	Comanda bi zgledala nekako takole:\\
+	\item \textbf{init} : Naredi prazen git mapo ali pa na novo reinicializira že obstoječo mapo.\\
+	Komanda bi zgledala nekako takole:\\
 	\bashsource{Izvorna_koda/GitInit.sh}
 	\item \textbf{clone} : Klonira že obstoječo mapo v trenutno mapo\\
 	Najbolj pogosto se ta komanda uporablja, da kloniramo mapo ali projekt iz kakšne strani, na naš računalnik. Lahko pa tudi lokalno pri sebi kloniramo iz ene mapo v drugo.\\
@@ -17,17 +17,17 @@ Funkcije:
 	In ko vse skupaj sestavimo bi bil primer komande takšen:\\
 	\bashsource{Izvorna_koda/GitClone.sh}
 	\item \textbf{config} : Nastavi globalne ali lokalne spremeljivke mape.\\
-	Ne bom se poglabljav v vse možnosti uporabe te komande ampak bom nastel samo nekaj osnovnih. V bistvu bosta nas zanimali samo dve in to sta:\\
+	Ne bom se poglabljav v vse možnosti uporabe te komande, ampak bom naštel samo nekaj osnovnih. V bistvu bosta nas zanimali samo dve in to sta:\\
 	\bashsource{Izvorna_koda/GitConfig.sh}
 	\item \textbf{add} : Doda datoteko ali skupino datotek k delovnemu drevesu.\\
-	Ta komanda doda datoteka, tako da se upoštevajo in beležijo vse spremembe narejene na njej. Na začetku, ko inicializiramo mapo, hočemo da se upoštevajo vse nato pa dodajamo posamezne datoteke.\\
+	Ta komanda doda datoteko, tako da se upoštevajo in beležijo vse spremembe narejene na njej. Na začetku, ko inicializiramo mapo, hočemo da se upoštevajo vse, nato pa dodajamo posamezne datoteke.\\
 	Par primerov uporabe te komande:\\
 	\bashsource{Izvorna_koda/GitAdd.sh}
 	\item \textbf{commit} : Zapiše spremembe v mapi\\
-	To komando pokličemo, po komandi add ali pa ko mergamo skupaj dve veji. Poleg tega imamo možnost, da poleg commita dodamo tudi sporočilo oz. poročilo kaj smo naredili. Primer:\\
+	To komando pokličemo, po komandi add ali ko združujemo skupaj dve veji. Poleg tega imamo možnost, da poleg commita dodamo tudi sporočilo oz. poročilo kaj smo naredili. Primer:\\
 	\bashsource{Izvorna_koda/GitCommit.sh}
 	\item \textbf{push} : Naloži datoteke na oddaljen strežnik\\
-	To komando pokličemo čisto nakoncu, ko smo dodali vse datoteke, jih zapisali(commitali). Mamo pa tudi možnost, da pushamo na različne veje(branche).\\
+	To komando pokličemo čisto nakoncu, ko smo dodali vse datoteke, jih zapisali (commitali). Imamo pa tudi možnost, da pushamo na različne veje(branche).\\
 	Primer:\\
 	\bashsource{Izvorna_koda/GitPush.sh}
 	\item \textbf{pull} : Potegne datoteke iz oddaljenega strežnika in jih združi z lokalno mapo.\\
