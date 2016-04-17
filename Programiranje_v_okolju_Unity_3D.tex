@@ -124,7 +124,32 @@ menucolor=black, runcolor=black, urlcolor=blue%
 \renewcommand{\abstractname}{Izvleček/Povzetek} %sprememba imena 
 
 \begin{document}
-	\maketitle
+	
+	\begin{titlepage}
+		\centering
+		\includegraphics[width=15cm, height=15cm,keepaspectratio=true]{Logo.png}\par
+		{\tiny http://projekti.gimvic.org/2015/2d/gimnazijavic/logo.png} \par\vspace{1cm}
+		{\scshape\LARGE Gimnazija Vič \par}
+		Tržaška cesta 72, 1000 LJubljana Slovenija \par
+		\vspace{1cm}
+		{\scshape\Large Seminarska naloga pri predmetu informatika\par}
+		\vspace{1.5cm}
+		{\huge\bfseries Programiranje v okolju Unity 3D\par}
+		\vspace{2cm}
+		Avtor: \par
+		{\Large\itshape Rok Kos \par}
+		\vfill
+		Mentor:\par
+		prof.~Klemen \textsc{Bajec}
+
+		\vfill
+
+	% Bottom of the page
+		{\large \today\par}
+	\end{titlepage}
+
+	%\maketitle
+
 	\newpage %nova stran
 	%prikaze vse kategorije
 	\tableofcontents
@@ -174,7 +199,7 @@ menucolor=black, runcolor=black, urlcolor=blue%
 		\subimport{7.VERSIONCONTROL/}{\n.tex}
 	}
 
-	\cite{manual} \cite{GameDevThorn} \cite{AndroidUnity}
+	
 	%\printbibliography
 	\printbibliography[
 		heading=bibintoc, %pove da naj bo tudi v categorijah
